@@ -8,7 +8,7 @@
     align-items center
 
 .copyright
-    font-size 0.7em
+    font-size 0.67em
     color #aaaaaa
 
 
@@ -24,67 +24,58 @@
     align-items center
 
 
-.social-icons .icon::before {
-  transition: all 0.6s cubic-bezier(0.5, 0, 0.1, 1.5);
-  border-radius: 50%;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 0;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 0;
-  z-index: -1;
-}
-.social-icons .icon:hover {
-  color: #dbecc7;
-}
-.social-icons .icon:hover::before {
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-  height: 50px;
-  width: 50px;
-}
-.social-icons .icon a {
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
-  display: block;
-  font-family: "FontAwesome", sans-serif;
-  font-size: 34px;
-  position: relative;
-}
-.social-icons .icon a::before {
-  display: block;
-}
+.social-icons .icon::before 
+    transition all 0.6s cubic-bezier(0.5, 0, 0.1, 1.5)
+    border-radius 50%
+    bottom 0
+    content ""
+    display block
+    height 0
+    left 0
+    margin auto
+    position absolute
+    right 0
+    top 0
+    width 0
+    z-index -1
 
-.facebook::before {
-  background: #3b5998;
-}
-.facebook a::before {
-  content: "\f39e";
-}
+.social-icons .icon:hover
+    color #dbecc7
 
-.twitter::before {
-  background: #1da1f2;
-}
-.twitter a::before {
-  content: "\f099";
-}
+.social-icons .icon:hover::before
+    box-shadow 0 0 25px rgba(0, 0, 0, 0.25)
+    height 50px
+    width 50px
 
-.pinterest::before {
-  background: #bd081c;
-}
-.pinterest a::before {
-  content: "\f231";
-}
+.social-icons .icon a
+    left 50%
+    top 50%
+    -webkit-transform translate3d(-50%, -50%, 0)
+    transform translate3d(-50%, -50%, 0)
+    display block
+    font-family 'Font Awesome 5 Brands'
+    font-size 20px
+    position relative
 
-.github::before {
-  background: #4078c0;
-}
-.github a::before {
-  content: "\f09b";
-}
+.social-icons .icon a::before
+    display block
+
+.facebook::before 
+    background #3b5998
+
+.facebook a::before
+    content "\f39e"
+
+.twitter::before 
+    background #1da1f2
+
+.twitter a::before
+    content: "\f099"
+
+.instagram::before 
+    background radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)
+
+.instagram a::before
+    content: "\f16d"
+
+
