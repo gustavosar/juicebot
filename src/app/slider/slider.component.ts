@@ -15,7 +15,7 @@ export class SliderComponent implements OnInit {
   title = 'NG7Swiper';
  
   config: SwiperOptions = {
-    autoplay: 95000, // Autoplay option having value in milliseconds
+    autoplay: 5000, // Autoplay option having value in milliseconds
     initialSlide: 0, // Slide Index Starting from 0
     slidesPerView: 1, // Slides Visible in Single View Default is 1
     pagination: '.swiper-pagination', // Pagination Class defined
