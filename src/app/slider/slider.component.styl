@@ -1,5 +1,5 @@
 swiper
-    height 75vh
+    height 77vh
     width 100%
     margin auto
 
@@ -9,3 +9,50 @@ swiper
     img
         width 90%
     
+.swiper-pagination
+    bottom 5px !important
+
+.swiper-button-next, 
+.swiper-button-prev
+    height 14px
+
+.swiper-button-next, 
+.swiper-button-prev 
+    background-image: none
+
+.swiper-button-prev::after
+    content "."
+    border 1px solid #eaeaea
+    padding 10px
+    border-radius 50%
+    width 25px
+    height 25px
+    display block
+    margin -10px
+    color #fff
+    margin: -30px 0 0 0;
+
+.swiper-button-next::after
+    content "."
+    border 1px solid #eaeaea
+    padding 10px
+    border-radius 50%
+    width 25px
+    height 25px
+    display block
+    margin -10px
+    color #fff
+    margin: -30px 0 0 -12px;
+
+.swiper-button-next, 
+.swiper-button-prev 
+    .fas
+        font-size: 0.6em;
+
+.swiper-button-prev
+    text-align right
+    width 26px
+
+.swiper-button-next
+    text-align center
+    width 26px
