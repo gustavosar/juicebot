@@ -1,3 +1,10 @@
+@import "../../assets/css/home/bob.styl"
+@import "../../assets/css/home/flavors.styl"
+@import "../../assets/css/home/btn-buy.styl"
+@import "../../assets/css/home/backg.styl"
+@import "../../assets/css/home/shipping.styl"
+@import "../../assets/css/home/text-juice.styl"
+
 swiper
     height 80vh
     width 100%
@@ -6,53 +13,47 @@ swiper
 
 .swiper-slide
     text-align center
-    img
-        width 74%
-        margin-top -9px
+
+.bottle-img
+    width 74%
+    margin-top -9px
     
 .swiper-pagination
     bottom 1px !important
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-
-.swiper-button-next, 
-.swiper-button-prev
-    height 14px
-    top 42%
-    background-image: none
-
-.swiper-button-prev
-    left 5%
+    display flex
+    justify-content center
+    align-content center
+    align-items center
 
 .swiper-button-next
-    right 5%
-    
-.swiper-button-prev::after,
-.swiper-button-next::after
-    content "."
+.swiper-button-prev
+    display flex
+    justify-content center
+    align-content center
+    align-items center
+    width 40px
+    height 40px
     border 1px solid #eaeaea
-    padding 10px
     border-radius 50%
-    width 25px
-    height 25px
-    display block
-    margin -10px
-    color #fff
+    background-image none !important
+    top 40%
+
+.swiper-button-next
+    right 3%
+
+.swiper-button-prev
+    left 3%
 
 .swiper-button-prev::after
-    margin: -30px 0 0 -9px;
+    margin -30px 0 0 -9px
 
 .swiper-button-next::after
-    margin: -30px 0 0 -12px;
+    margin -30px 0 0 -12px
 
-.swiper-button-next, 
+.swiper-button-next
 .swiper-button-prev 
     .fas
-        font-size: 0.6em;
-        text-align center
-        width 26px
+        font-size 0.6em
 
 .pag-number
     position absolute
@@ -70,15 +71,6 @@ swiper
     position relative
     top -10px
 
-.num-0-1
-    color #8db718
-
-.num-1-1
-    color #ffb504
-
-.num-2-1
-    color #ff5452
-
 .subtit-sldr
     color #ea78cf
     font-size 1.1em
@@ -89,223 +81,3 @@ swiper
     font-family 'Open Sans', sans-serif
     width 120px
     text-align left
-
-.shipping
-    font-size 0.57em
-    background #000000
-    border-radius 10px
-    width 210px
-    height 42px 
-    color #fff
-    display flex
-    justify-content center
-    align-content center
-    align-items center
-    position absolute
-    top 70%
-    left 20%
-    text-transform: uppercase;
-
-.shipping img
-    width 6.5%
-    margin-left 7px
-    margin-top -0.13em
-
-.backg-0
-    background #ffb504
-    width 100%
-    height 100vh
-    position absolute
-    left 0
-    top 0
-    z-index -9
-
-.backg-1
-    background #fff
-    width 97.8%
-    height 95.5vh
-    display flex
-    justify-content center
-    align-content center
-    align-items center
-    z-index -8
-    padding 10px
-    border-radius 1%
-    margin-left 0.4%
-    margin-top 0.35%
-
-.txt-juice
-    position absolute
-    top 59%
-    right 25%
-    text-align left
-    h2,p
-        font-weight 100
-        color #7f7f7f
-    h1
-        font-size 1.6em
-        font-weight 300
-        span
-            font-style italic
-    h2
-        font-size 0.9em
-    p
-        font-size 0.75em
-        margin-bottom 25px
-
-.btn-buy
-    background #da2394
-    padding 8px 15px
-    border-radius 10px
-    font-size 0.65em
-    color #fff
-    text-decoration none
-
-.price
-    color #da2394
-    font-size 0.9em
-    font-weight 100
-    margin-left 15px
-    font-style italic
-
-button
-    position relative
-    display inline-block
-    cursor pointer
-    outline none
-    border 0
-    vertical-align middle
-    text-decoration none
-    background transparent
-    padding 0
-    font-size inherit
-    font-family inherit
-
-button.learn-more 
-    width 8rem
-    height auto
-
-button.learn-more .circle 
-    transition all 0.45s cubic-bezier(0.65, 0, 0.076, 1)
-    position relative
-    margin 0
-    width 2rem
-    height 2rem
-    background #282936
-    border-radius 1.625rem
-
-button.learn-more .circle .icon 
-    transition all 0.45s cubic-bezier(0.65, 0, 0.076, 1)
-    position absolute
-    top 0
-    bottom 0
-    margin auto
-    background #fff
-
-button.learn-more .circle .icon.arrow 
-    transition all 0.45s cubic-bezier(0.65, 0, 0.076, 1)
-    left 0.1rem
-    width 1.125rem
-    height 0.125rem
-    background none
-
-button.learn-more .circle .icon.arrow::before
-    position absolute
-    content ''
-    top -0.14rem
-    right 0.0625rem
-    width 0.4 rem
-    height 0.4 rem
-    border-top 0.125rem solid #fff
-    border-right 0.125rem solid #fff
-    -webkit-transform rotate(45deg)
-    transform: rotate(45deg)
-
-button.learn-more .button-text
-    transition all 0.45s cubic-bezier(0.65, 0, 0.076, 1)
-    position absolute
-    top 0
-    left 0
-    right 0
-    bottom 0
-    padding 0.45rem 0
-    margin 0 0 0 1.85rem
-    color #282936
-    font-weight 100
-    line-height 1.35
-    text-align center
-    text-transform uppercase
-    font-size 0.9em
-
-button:hover .circle
-    width: 100%
-
-button:hover .circle .icon.arrow
-    background #fff
-    -webkit-transform translate(1rem, 0)
-    transform translate(1rem, 0)
-
-button:hover .button-text 
-    color #fff
-
-/* Bob */
-@-webkit-keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-  50% {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-  }
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-@keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-  50% {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-  }
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-@-webkit-keyframes hvr-bob-float {
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-@keyframes hvr-bob-float {
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-.hvr-bob 
-    -webkit-transform perspective(1px) translateZ(0)
-    transform perspective(1px) translateZ(0)
-    box-shadow 0 0 1px rgba(0, 0, 0, 0)
-
-.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active 
-    -webkit-animation-name hvr-bob-float, hvr-bob
-    animation-name hvr-bob-float, hvr-bob
-    -webkit-animation-duration .3s, 1.5s
-    animation-duration .3s, 1.5s
-    -webkit-animation-delay 0s, .3s
-    animation-delay 0s, .3s
-    -webkit-animation-timing-function ease-out, ease-in-out
-    animation-timing-function ease-out, ease-in-out
-    -webkit-animation-iteration-count 1, infinite
-    animation-iteration-count 1, infinite
-    -webkit-animation-fill-mode forwards
-    animation-fill-mode forwards
-    -webkit-animation-direction normal, alternate
-    animation-direction normal, alternate
