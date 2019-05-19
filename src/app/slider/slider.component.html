@@ -4,119 +4,28 @@
 
 <swiper [config]="config">
   <div class="swiper-wrapper">
-    <app-slider-item></app-slider-item>
-    <!-- SILDE 1 -->
-<!--     <div class="swiper-slide">
+
+    <div class="swiper-slide" *ngFor="let slide of slides" >
       <div class="row txt-juice">
-        <h1>Golden <span class="melon">Melon</span></h1>
-        <h2>35 VG / 65 PG - 30ml</h2>
-        <p>
-          Lorem ipsum dolor sit amet, adipiscing elit.<br>
-          Phasellus semper libero, at posuere odio et. 
-        </p>
+        <h1>{{slide.title}} <span class="capitalize {{slide.flavor}}">{{slide.flavor}}</span></h1>
+        <h2>{{slide.config}}</h2>
+        <p>{{slide.description}}</p>
         <button class="learn-more">
-          <div class="circle bg-melon">
-            <span class="icon arrow"></span>
-          </div>
-          <p class="button-text">R$ 35,00</p>
+          <div class="circle {{slide.bg}}"><span class="icon arrow"></span></div>
+          <p class="button-text">R$ {{slide.price}}</p>
         </button>
       </div>
-
-      <span class="subtit-sldr melon">eLiquids Store</span>
+      <span class="subtit-sldr {{slide.flavor}}">eLiquids Store</span>
       <div class="shipping hvr-bob">
-        <span>Frete grátis acima R$150,00</span>
+        <span>Frete grátis acima R${{slide.price}}</span>
         <img class="shipping-img" src="../../assets/images/brazil.jpg">
       </div>
       <div class="pag-number">
-        <span class="number-1 melon">1</span>
-        <span class="number-2">/ 4</span>
+        <span class="number-1 {{slide.flavor}}">{{slide.id}}</span>
+        <span class="number-2">/ {{slide.total}}</span>
       </div>
-      <img class="bottle-img" src="../../assets/images/slider/sldr-1.jpg" />
+      <img class="bottle-img" src="../../assets/images/slider/sldr-{{slide.id}}.jpg" />
     </div>
-
-    <div class="swiper-slide">
-      <div class="row txt-juice">
-        <h1>Juicy <span class="watermelon">Watermelon</span></h1>
-        <h2>60 VG / 40 PG - 30ml</h2>
-        <p>
-          Lorem ipsum dolor sit amet, adipiscing elit.<br>
-          Phasellus semper libero, at posuere odio et. 
-        </p>
-        <button class="learn-more">
-          <div class="circle bg-watermelon">
-            <span class="icon arrow"></span>
-          </div>
-          <p class="button-text">R$ 35,00</p>
-        </button>
-      </div>
-
-      <span class="subtit-sldr watermelon">eLiquids Store</span>
-      <div class="shipping hvr-bob">
-        <span>Frete grátis acima R$150,00</span>
-        <img class="shipping-img" src="../../assets/images/brazil.jpg">
-      </div>
-      <div class="pag-number">
-        <span class="number-1 watermelon">2</span>
-        <span class="number-2">/ 4</span>
-      </div>
-      <img class="bottle-img" src="../../assets/images/slider/sldr-2.jpg" />
-    </div>
-
-    <div class="swiper-slide">
-      <div class="row txt-juice">
-        <h1>Paradise <span class="kiwi">kiwi</span></h1>
-        <h2>60 VG / 40 PG - 30ml</h2>
-        <p>
-          Lorem ipsum dolor sit amet, adipiscing elit.<br>
-          Phasellus semper libero, at posuere odio et. 
-        </p>
-        <button class="learn-more">
-          <div class="circle bg-kiwi">
-            <span class="icon arrow"></span>
-          </div>
-          <p class="button-text">R$ 35,00</p>
-        </button>
-      </div>
-
-      <span class="subtit-sldr kiwi">eLiquids Store</span>
-      <div class="shipping hvr-bob">
-        <span>Frete grátis acima R$150,00</span>
-        <img class="shipping-img" src="../../assets/images/brazil.jpg">
-      </div>
-      <div class="pag-number">
-        <span class="number-1 kiwi">3</span>
-        <span class="number-2">/ 4</span>
-      </div>
-      <img class="bottle-img" src="../../assets/images/slider/sldr-3.jpg" />
-    </div>
-
-    <div class="swiper-slide">
-      <div class="row txt-juice">
-        <h1>Sunshine <span class="strawberry">Strawberry</span></h1>
-        <h2>60 VG / 40 PG - 30ml</h2>
-        <p>
-          Lorem ipsum dolor sit amet, adipiscing elit.<br>
-          Phasellus semper libero, at posuere odio et. 
-        </p>
-        <button class="learn-more">
-          <div class="circle bg-strawberry">
-            <span class="icon arrow"></span>
-          </div>
-          <p class="button-text">R$ 35,00</p>
-        </button>
-      </div>
-
-      <span class="subtit-sldr strawberry">eLiquids Store</span>
-      <div class="shipping hvr-bob">
-        <span>Frete grátis acima R$150,00</span>
-        <img class="shipping-img" src="../../assets/images/brazil.jpg">
-      </div>
-      <div class="pag-number">
-        <span class="number-1 strawberry">4</span>
-        <span class="number-2">/ 4</span>
-      </div>
-      <img class="bottle-img" src="../../assets/images/slider/sldr-4.jpg" />
-    </div> -->
 
   </div>
   <!-- Add Pagination -->

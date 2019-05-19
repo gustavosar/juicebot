@@ -1,4 +1,4 @@
-export class Slider {
+export default class Slide {
     id: number;
     title: string;
     flavor: string;
@@ -6,4 +6,5 @@ export class Slider {
     description: string;
     price: string;
     bg: string;
+    total: string;
 }

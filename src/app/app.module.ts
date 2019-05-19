@@ -8,15 +8,13 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { SliderComponent } from './slider/slider.component';
-import { SliderItemComponent } from './slider-item/slider-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     FooterComponent,
-    SliderComponent,
-    SliderItemComponent
+    SliderComponent
   ],
   imports: [
     BrowserModule,
