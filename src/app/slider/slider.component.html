@@ -1,11 +1,8 @@
-<div class="backg-0">
-  <div class="backg-1"></div>
-</div>
-
 <swiper [config]="config">
   <div class="swiper-wrapper">
 
     <div class="swiper-slide" *ngFor="let slide of slides" >
+      <div class="backg-0 {{slide.bg}}"><div class="backg-1"></div></div>
       <div class="row txt-juice">
         <h1>{{slide.title}} <span class="capitalize {{slide.flavor}}">{{slide.flavor}}</span></h1>
         <h2>{{slide.config}}</h2>
@@ -31,7 +28,12 @@
   <!-- Add Pagination -->
   <div class="swiper-pagination paginat"></div>
   <!-- Add Arrows -->
-  <div class="swiper-button-next button3 hvr-icon-wobble-horizontal"><i class="fas fa-chevron-right"></i></div>
-  <div class="swiper-button-prev button3 hvr-icon-wobble-horizontal"><i class="fas fa-chevron-left"></i></div>
+  <div class="swiper-button-next button3">
+    <i class="fas fa-chevron-right"></i>
+  </div>
+  <div class="swiper-button-prev button3">
+    <i class="fas fa-chevron-left"></i>
+  </div>
+
 </swiper>
 

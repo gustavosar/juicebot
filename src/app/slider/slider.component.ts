@@ -36,7 +36,7 @@ export class SliderComponent implements OnInit {
       title: "Golden",
       flavor: "melon",
       config: "40 VG / 60 PG / 30ml",
-      description: "Lorem ipsum dolor sit amet, adipiscing elit.",
+      description: "Lorem ipsum dolor sit amet, adipiscing elit. Lorem ipsum dolor sit amet, adipiscing elit.",
       price: "35,00",
       bg: "bg-melon",
       total: "4"
