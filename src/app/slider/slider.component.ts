@@ -1,15 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-import { compileFactoryFunction } from '@angular/compiler/src/render3/r3_factory';
 import Slide from '../models/slide';
+import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-slider',
   templateUrl: './slider.component.html',
-  styleUrls: ['./slider.component.styl']
+  styleUrls: ['./slider.component.styl'],
+  providers: [NgbModalConfig, NgbModal]
 })
+
 export class SliderComponent implements OnInit {
 
-  constructor() { }
+  constructor(config: NgbModalConfig, private modalService: NgbModal) {
+    // customize default values of modals used by this component tree
+    config.backdrop = 'static';
+    config.keyboard = false;
+  }
+
+  open(content) {
+    this.modalService.open(content);
+  }
 
   ngOnInit() { }
 
