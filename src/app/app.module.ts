@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { SwiperModule } from 'angular2-useful-swiper';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxSmartModalModule } from 'ngx-smart-modal';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -24,7 +25,8 @@ import { JuiceFruitComponent } from './juice-fruit/juice-fruit.component';
     AppRoutingModule,
     SwiperModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    NgxSmartModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

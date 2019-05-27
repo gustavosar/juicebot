@@ -37,16 +37,10 @@
 
 </swiper>
 
-<ng-template #content let-c="close" let-d="dismiss">
-    <div class="modal-header">
-      <h4 class="modal-title" id="modal-basic-title">Hi there!</h4>
-    </div>
-    <div class="modal-body">
-      <p>Hello, World!</p>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Save</button>
-    </div>
-  </ng-template>
-  
-  <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>
+<ngx-smart-modal #myModal identifier="myModal" [dismissable]="false" [autostart]="true">
+  <h1>Title</h1>
+  <p>Some stuff...</p>
+  <button (click)="myModal.close()">Close</button>
+</ngx-smart-modal>
+
+<button (click)="ngxSmartModalService.getModal('myModal').open()" [hidden]="true">Open myModal</button>

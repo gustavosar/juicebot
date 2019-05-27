@@ -1,25 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import Slide from '../models/slide';
-import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-
+import { NgxSmartModalService } from 'ngx-smart-modal';
 
 @Component({
   selector: 'app-slider',
   templateUrl: './slider.component.html',
-  styleUrls: ['./slider.component.styl'],
-  providers: [NgbModalConfig, NgbModal]
+  styleUrls: ['./slider.component.styl']
 })
 
 export class SliderComponent implements OnInit {
 
-  constructor(config: NgbModalConfig, private modalService: NgbModal) {
-    // customize default values of modals used by this component tree
-    config.backdrop = 'static';
-    config.keyboard = false;
-  }
+  constructor(public ngxSmartModalService: NgxSmartModalService) {
 
-  open(content) {
-    this.modalService.open(content);
   }
 
   ngOnInit() { }
