@@ -22,6 +22,7 @@
         <span class="number-2">/ {{slide.total}}</span>
       </div>
       <img class="bottle-img" src="../../assets/images/slider/sldr-{{slide.id}}.jpg" />
+      <img class="bottle-img" src="../../assets/images/slider/sldr-{{slide.id}}.jpg" />
     </div>
 
   </div>
@@ -37,10 +38,10 @@
 
 </swiper>
 
-<ngx-smart-modal #myModal identifier="myModal" [dismissable]="false" [autostart]="true">
+<ngx-smart-modal #myModal identifier="myModal" [dismissable]="false" [autostart]="true" [escapable]="false" customClass="nsm-dialog-animation-ttb">
   <h1>Title</h1>
   <p>Some stuff...</p>
-  <button (click)="myModal.close()">Close</button>
+  <a class="btn btn-primary" (click)="myModal.close()" >Tenho +18 anos</a>
 </ngx-smart-modal>
 
 <button (click)="ngxSmartModalService.getModal('myModal').open()" [hidden]="true">Open myModal</button>
