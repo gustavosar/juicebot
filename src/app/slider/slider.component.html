@@ -12,8 +12,8 @@
           <p class="button-text">R$ {{slide.price}}</p>
         </button>
       </div>
-      <span class="subtit-sldr {{slide.flavor}}">eLiquids Store</span>
-      <div class="shipping hvr-bob">
+      <span class="subtit-sldr desktop-only {{slide.flavor}}">eLiquids Store</span>
+      <div class="shipping desktop-only hvr-bob">
         <span>Frete grátis acima R${{slide.price}}</span>
         <img class="shipping-img" src="../../assets/images/brazil.jpg">
       </div>
@@ -21,18 +21,18 @@
         <span class="number-1 {{slide.flavor}}">{{slide.id}}</span>
         <span class="number-2">/ {{slide.total}}</span>
       </div>
-      <img class="bottle-img" src="../../assets/images/slider/sldr-{{slide.id}}.jpg" />
-      <img class="bottle-img" src="../../assets/images/slider/sldr-{{slide.id}}.jpg" />
+      <img class="bottle-img desktop-only" src="../../assets/images/slider/sldr-{{slide.id}}.jpg" />
+      <img class="bottle-img mobile-only" src="../../assets/images/slider/mobile/sldr-{{slide.id}}.jpg" />
     </div>
 
   </div>
   <!-- Add Pagination -->
   <div class="swiper-pagination paginat"></div>
   <!-- Add Arrows -->
-  <div class="swiper-button-next button3">
+  <div class="swiper-button-next desktop-only">
     <i class="fas fa-chevron-right"></i>
   </div>
-  <div class="swiper-button-prev button3">
+  <div class="swiper-button-prev desktop-only">
     <i class="fas fa-chevron-left"></i>
   </div>
 

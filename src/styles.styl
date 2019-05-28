@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/ngx-smart-modal/ngx-smart-modal.css"
+
 body, html
     font-family 'Open Sans', sans-serif
     height 100%
@@ -26,3 +27,11 @@ body, html
 
 .nsm-dialog-btn-close
     display none !important
+
+@media (max-width: 480px)
+    .desktop-only
+        display none !important
+
+@media (min-width: 481px)
+    .mobile-only
+        display none !important
