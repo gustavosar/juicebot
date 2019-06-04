@@ -38,10 +38,19 @@
 
 </swiper>
 
-<ngx-smart-modal #myModal identifier="myModal" [dismissable]="false" [autostart]="true" [escapable]="false" customClass="nsm-dialog-animation-ttb">
-  <h1>Title</h1>
-  <p>Some stuff...</p>
-  <a class="btn btn-primary" (click)="myModal.close()" >Tenho +18 anos</a>
+<ngx-smart-modal #myModal identifier="myModal" [dismissable]="false" [autostart]="true" [escapable]="false" customClass="nsm-dialog-animation-ttb nsm-centered">
+  <div class="d-flex justify-content-center align-content-center">
+    <div class="botage"><img  src="../../assets/images/juicebot_bot.png" alt="JuiceBot"></div>
+  </div>
+  <p class="mb-4 txt-age">
+    Este site contém produtos impróprios<br>para menores de 18 anos.<br>
+    Nós não vendemos para menores de idade!
+  </p>
+  <div class="d-flex justify-content-center align-content-between text-white">
+    <a class="btn btn-dark mr-2" (click)="myModal.close()" >Tenho + de 18 anos</a>
+    <a class="btn btn-dark ml-2" href="https://disneyworld.disney.go.com" >Sou menor de idade</a>
+  </div>
+
 </ngx-smart-modal>
 
 <button (click)="ngxSmartModalService.getModal('myModal').open()" [hidden]="true">Open myModal</button>
