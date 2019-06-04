@@ -39,8 +39,8 @@ export class SliderComponent implements OnInit {
       title: "Golden",
       flavor: "melon",
       config: "70 PG / 30 VG / 30ml",
-      description: "Lorem ipsum dolor sit amet, adipiscing elit. Lorem ipsum dolor sit amet, adipiscing elit.",
-      price: "35,00",
+      description: "Nosso Joice com uma marcante explosão de sabor de melão.",
+      price: "32,50",
       bg: "bg-melon",
       total: "4"
     },
@@ -49,8 +49,8 @@ export class SliderComponent implements OnInit {
       title: "Juicy",
       flavor: "watermelon",
       config: "70 PG / 30 VG / 30ml",
-      description: "Lorem ipsum dolor sit amet, adipiscing elit.",
-      price: "35,00",
+      description: "Todo sabor único e delicioso que só a Melancia pode proporcionar.",
+      price: "32,50",
       bg: "bg-watermelon",
       total: "4"
     },
@@ -59,8 +59,8 @@ export class SliderComponent implements OnInit {
       title: "Paradise",
       flavor: "kiwi",
       config: "70 PG / 30 VG / 30ml",
-      description: "Lorem ipsum dolor sit amet, adipiscing elit.",
-      price: "35,00",
+      description: "Nosso sensacional ejuice que equilibra o dedinho com o doce.",
+      price: "32,50",
       bg: "bg-kiwi",
       total: "4"
     },
@@ -69,8 +69,8 @@ export class SliderComponent implements OnInit {
       title: "Sunshine",
       flavor: "strawberry",
       config: "70 PG / 30 VG / 30ml",
-      description: "Lorem ipsum dolor sit amet, adipiscing elit.",
-      price: "35,00",
+      description: "O ejuice que dispensa apresentações, nosso morango sweet!",
+      price: "32,50",
       bg: "bg-strawberry",
       total: "4"
     }
