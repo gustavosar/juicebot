@@ -7,10 +7,12 @@
         <h1>{{slide.title}} <span class="capitalize {{slide.flavor}}">{{slide.flavor}}</span></h1>
         <h2>{{slide.config}}</h2>
         <p>{{slide.description}}</p>
-        <button class="learn-more">
-          <div class="circle {{slide.bg}}"><span class="icon arrow"></span></div>
-          <p class="button-text">R$ {{slide.price}}</p>
-        </button>
+        <a target="_blank" href="https://juicebot.minestore.com.br/produtos/{{slide.site}}">
+          <button class="learn-more">
+            <div class="circle {{slide.bg}}"><span class="icon arrow"></span></div>
+            <p class="button-text">R$ {{slide.price}}</p>
+          </button>
+        </a>
       </div>
       <span class="subtit-sldr desktop-only {{slide.flavor}}">eLiquids Store</span>
       <div class="shipping desktop-only hvr-bob">

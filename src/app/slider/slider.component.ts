@@ -42,7 +42,8 @@ export class SliderComponent implements OnInit {
       description: "Nosso Joice com uma marcante explosão de sabor de melão.",
       price: "32,50",
       bg: "bg-melon",
-      total: "4"
+      total: "4",
+      site:"golden-melon"
     },
     {
       id: 2,
@@ -52,7 +53,8 @@ export class SliderComponent implements OnInit {
       description: "Todo sabor único e delicioso que só a Melancia pode proporcionar.",
       price: "32,50",
       bg: "bg-watermelon",
-      total: "4"
+      total: "4",
+      site:"juicy-watermelon"
     },
     {
       id: 3,
@@ -62,7 +64,8 @@ export class SliderComponent implements OnInit {
       description: "Nosso sensacional ejuice que equilibra o dedinho com o doce.",
       price: "32,50",
       bg: "bg-kiwi",
-      total: "4"
+      total: "4",
+      site:"paradise-kiwi"
     },
     {
       id: 4,
@@ -72,7 +75,8 @@ export class SliderComponent implements OnInit {
       description: "O ejuice que dispensa apresentações, nosso morango sweet!",
       price: "32,50",
       bg: "bg-strawberry",
-      total: "4"
+      total: "4",
+      site:"sunshine-strawberry"
     }
 
   ]

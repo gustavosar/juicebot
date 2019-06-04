@@ -7,4 +7,5 @@ export default class Slide {
     price: string;
     bg: string;
     total: string;
+    site: string;
 }
